@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>There are only some random Pics of CodyJasmine</title>
+    <link rel="icon" href="https://bit.ly/3nqC8YW" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      ::-webkit-scrollbar {
+        width: 0;
+      }
+      #img {
+        background-size: cover;
+      }
+      button {
+        border-radius: 0% !important;
+      }
+      #loader {
+        position: absolute;
+
+        left: 50%;
+        top: 50%;
+        margin: 0 auto;
+        z-index: 1;
+        width: 100px;
+        height: 100px;
+        margin: -76px 0 0 -76px;
+        border: 10px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 10px solid #f14668;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 1s linear infinite;
+        transform: translate(50%,50%);
+      }
+
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      
+      .animate-bottom {
+        position: relative;
+        -webkit-animation-name: animatebottom;
+        -webkit-animation-duration: 0.25s;
+        animation-name: animatebottom;
+        animation-duration: 0.25s;
+      }
+
+      @-webkit-keyframes animatebottom {
+        from {
+          bottom: -100px;
+          opacity: 0;
+        }
+        to {
+          bottom: 0px;
+          opacity: 1;
+        }
+      }
+
+      @keyframes animatebottom {
+        from {
+          bottom: -100px;
+          opacity: 0;
+        }
+        to {
+          bottom: 0;
+          opacity: 1;
+        }
+      }
+
+      .page {
+        display: none;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loader"></div>
+    <form>
+      <div class="page animate-bottom">
+        <div id="img"></div>
+        <button
+          id="btn"
+          class="button is-danger"
+          style="width: 100vw"
+          type="submit"
+        >
+          Click to Random image
+        </button>
+      </div>
+    </form>
+
+    <script src="lib.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

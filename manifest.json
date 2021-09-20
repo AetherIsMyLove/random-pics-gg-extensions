@@ -1,0 +1,17 @@
+{
+    "manifest_version":2,
+    "name":"Just some random pic of CodyJasmine",
+    "version":"1.0.0",
+    "icons":{
+        "128":"icon.png"
+    },
+    "description":"Just some random pic of CodyJasmine",
+     
+     "browser_action":{
+         "default_popup":"popup.html",
+         "default_title":"CodyJasmine"
+     },
+     "background":{
+         "scripts":["main.js"]
+     }
+}
